@@ -53,6 +53,64 @@ code {
   margin: 0 auto;
 }
 
+.welcome-page {
+  overflow-x: hidden;
+}
+
+.welcome-main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 48px 0;
+}
+
+.welcome-panel {
+  width: min(100%, 760px);
+  padding: 56px;
+  border-radius: 36px;
+  background: rgba(255, 255, 255, 0.78);
+  text-align: center;
+}
+
+.welcome-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 36px;
+}
+
+.language-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+  padding: 24px;
+  border-radius: 28px;
+  background: #ffffff;
+  color: var(--text);
+  text-decoration: none;
+  transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.language-card:hover,
+.language-card:focus-visible {
+  transform: translateY(-2px);
+  background: var(--bg-soft);
+}
+
+.language-card-label {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.language-card-meta {
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
 .header {
   padding: 0;
 }
@@ -62,12 +120,12 @@ code {
 }
 
 .header-bar {
-  min-height: 80px;
+  min-height: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 20px 0;
+  padding: 20px 48px;
   background: #ffffff;
 }
 
@@ -86,15 +144,18 @@ h3 {
 .logo {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   flex-shrink: 0;
+  margin: 0;
   text-decoration: none;
 }
 
 .logo-image {
   display: block;
-  height: 40px;
+  height: 48px;
   width: auto;
   object-fit: contain;
+  margin: 0;
 }
 
 .lang-nav {
@@ -439,6 +500,7 @@ html[dir="rtl"] .app-card-header {
   .hero-panel,
   .page-hero-copy,
   .page-hero-card,
+  .welcome-panel,
   .app-card,
   .info-card {
     padding: 28px;
@@ -452,7 +514,7 @@ html[dir="rtl"] .app-card-header {
 
   .header-bar {
     min-height: auto;
-    padding: 18px 0;
+    padding: 18px 24px;
   }
 
   h1 {
@@ -482,11 +544,19 @@ html[dir="rtl"] .app-card-header {
     padding: 0;
   }
 
+  .welcome-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-panel {
+    padding: 36px 24px;
+  }
+
   .lang-nav {
     gap: 14px;
   }
 
   .logo-image {
-    height: 36px;
+    height: 42px;
   }
 }
