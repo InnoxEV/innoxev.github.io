@@ -72,6 +72,21 @@ code {
   text-align: center;
 }
 
+.welcome-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+  text-decoration: none;
+}
+
+.welcome-logo-image {
+  display: block;
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+}
+
 .welcome-actions {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -550,6 +565,10 @@ html[dir="rtl"] .app-card-header {
 
   .welcome-panel {
     padding: 36px 24px;
+  }
+
+  .welcome-logo-image {
+    height: 54px;
   }
 
   .lang-nav {
