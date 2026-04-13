@@ -11,115 +11,44 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700&display=swap"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body>
+<body class="homepage">
   <div class="site-shell">
-    <header class="site-header">
-      <nav class="navbar">
-        <a class="brand" href="index.html">Innox EV Hub</a>
-        <div class="nav-links">
-          <a class="nav-link active" href="index.html">Home</a>
-          <a class="nav-link" href="pages/apps.html">Apps</a>
-          <a class="nav-link" href="pages/about.html">About</a>
-        </div>
-        <div class="language-switch" aria-label="Language switcher">
+    <header class="header header-home">
+      <div class="header-bar">
+        <a class="logo" href="index.html" aria-label="Innox EV homepage">
+          <img
+            class="logo-image"
+            src="../assets/images/logo-en.png"
+            alt="Innox EV"
+          >
+        </a>
+        <nav class="lang-nav" aria-label="Language switcher">
           <a class="lang-link active" href="../en/index.html">EN</a>
           <a class="lang-link" href="../ar/index.html">AR</a>
-        </div>
-      </nav>
-
-      <section class="hero">
-        <div class="hero-copy">
-          <span class="eyebrow">Future-ready EV resources</span>
-          <h1>⚡ Innox EV Hub 🔥</h1>
-          <p class="hero-text">
-            Discover polished EV-friendly apps, helpful installation notes, and
-            a scalable content hub built for future downloads, updates, and
-            mobile integration.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="pages/apps.html">Browse Apps</a>
-            <a class="btn btn-secondary" href="pages/about.html">Learn More</a>
-          </div>
-        </div>
-
-        <div class="hero-panel">
-          <p class="panel-label">Platform highlights</p>
-          <ul class="feature-list">
-            <li>Centralized app catalog powered by JSON data</li>
-            <li>Shared design system for all current and future pages</li>
-            <li>Mobile-friendly layout ready for growth</li>
-          </ul>
-        </div>
-      </section>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section class="content-section">
-        <div class="section-heading">
-          <span class="eyebrow">Featured collection</span>
-          <h2>Trusted apps for your EV setup</h2>
-          <p>
-            A curated shortlist of apps that work well inside the Innox EV
-            experience. The cards below are loaded from a shared data source.
+    <main class="home-main">
+      <section class="hero hero-home hero-centered">
+        <div class="hero-copy hero-copy-home">
+          <span class="eyebrow">Premium EV Experience</span>
+          <h1>Smart EV Apps &amp; Solutions</h1>
+          <p class="hero-text">
+            Everything you need for your BYD experience.
           </p>
-        </div>
-
-        <div
-          id="featured-apps-en"
-          class="card-grid"
-          data-apps-container
-          data-apps-src="../data/apps.en.json"
-          aria-live="polite"
-        ></div>
-      </section>
-
-      <section class="content-section content-section-alt">
-        <div class="section-heading">
-          <span class="eyebrow">Why this structure works</span>
-          <h2>Built for expansion</h2>
-          <p>
-            The project now separates content, styling, and app data so we can
-            add more pages, richer app details, and future integrations without
-            rewriting the site architecture.
-          </p>
-        </div>
-
-        <div class="info-grid">
-          <article class="info-card">
-            <h3>Shared styling</h3>
-            <p>
-              A single stylesheet keeps the visual system aligned across home,
-              app listings, and future pages.
-            </p>
-          </article>
-          <article class="info-card">
-            <h3>Structured data</h3>
-            <p>
-              App metadata lives in JSON, making it easy to connect to APIs,
-              mobile clients, or richer CMS-driven workflows later.
-            </p>
-          </article>
-          <article class="info-card">
-            <h3>Consistent navigation</h3>
-            <p>
-              A simple navigation bar makes the project feel like a complete
-              product instead of a single landing page.
-            </p>
-          </article>
+          <div class="hero-actions hero-actions-centered">
+            <a class="btn btn-primary" href="pages/apps.html">Browse Apps</a>
+            <a class="btn btn-secondary" href="pages/about.html">Fix My Car</a>
+          </div>
         </div>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <p>Innox EV Hub. Clean structure for the next phase of growth.</p>
-    </footer>
   </div>
-
-  <script src="../assets/js/apps.js" defer></script>
 </body>
 </html>

@@ -11,115 +11,44 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;500;700&family=Tajawal:wght@400;500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700&display=swap"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body class="arabic">
   <div class="site-shell">
-    <header class="site-header">
-      <nav class="navbar">
-        <a class="brand" href="index.html">مركز Innox EV</a>
-        <div class="nav-links">
-          <a class="nav-link active" href="index.html">الرئيسية</a>
-          <a class="nav-link" href="pages/apps.html">التطبيقات</a>
-          <a class="nav-link" href="pages/about.html">حول الموقع</a>
-        </div>
-        <div class="language-switch" aria-label="مبدل اللغة">
+    <header class="header header-home">
+      <div class="header-bar">
+        <a class="logo" href="index.html" aria-label="الصفحة الرئيسية لمركز Innox EV">
+          <img
+            class="logo-image"
+            src="../assets/images/logo-ar.png"
+            alt="مركز Innox EV"
+          >
+        </a>
+        <nav class="lang-nav" aria-label="مبدل اللغة">
           <a class="lang-link" href="../en/index.html">EN</a>
           <a class="lang-link active" href="../ar/index.html">AR</a>
-        </div>
-      </nav>
-
-      <section class="hero">
-        <div class="hero-copy">
-          <span class="eyebrow">موارد جاهزة لمستقبل السيارات الكهربائية</span>
-          <h1>⚡ مركز Innox EV 🔥</h1>
-          <p class="hero-text">
-            اكتشف تطبيقات متقنة للسيارات الكهربائية، وملاحظات تثبيت مفيدة،
-            ومنصة قابلة للتوسع جاهزة للتنزيلات المستقبلية والتكامل مع تطبيقات
-            الهاتف.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="pages/apps.html">تصفح التطبيقات</a>
-            <a class="btn btn-secondary" href="pages/about.html">اعرف المزيد</a>
-          </div>
-        </div>
-
-        <div class="hero-panel">
-          <p class="panel-label">أهم مميزات المنصة</p>
-          <ul class="feature-list">
-            <li>فهرس تطبيقات مركزي يعتمد على بيانات JSON</li>
-            <li>نظام تصميم موحد لجميع الصفحات الحالية والمستقبلية</li>
-            <li>واجهة متجاوبة مناسبة للجوال وجاهزة للنمو</li>
-          </ul>
-        </div>
-      </section>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section class="content-section">
-        <div class="section-heading">
-          <span class="eyebrow">مجموعة مختارة</span>
-          <h2>تطبيقات موثوقة لتجهيز سيارتك الكهربائية</h2>
-          <p>
-            قائمة مختارة من التطبيقات التي تعمل بشكل جيد داخل تجربة Innox EV.
-            يتم تحميل البطاقات التالية من مصدر بيانات مشترك.
+    <main class="home-main">
+      <section class="hero hero-home hero-centered">
+        <div class="hero-copy hero-copy-home">
+          <span class="eyebrow">تجربة سيارات كهربائية فاخرة</span>
+          <h1>تطبيقات وحلول ذكية للسيارات الكهربائية</h1>
+          <p class="hero-text">
+            كل ما تحتاجه لتجربة BYD الخاصة بك.
           </p>
-        </div>
-
-        <div
-          id="featured-apps-ar"
-          class="card-grid"
-          data-apps-container
-          data-apps-src="../data/apps.ar.json"
-          aria-live="polite"
-        ></div>
-      </section>
-
-      <section class="content-section content-section-alt">
-        <div class="section-heading">
-          <span class="eyebrow">لماذا ينجح هذا التنظيم</span>
-          <h2>مبني للتوسع</h2>
-          <p>
-            يفصل المشروع الآن بين المحتوى والتصميم وبيانات التطبيقات حتى نتمكن
-            من إضافة صفحات جديدة وتفاصيل أعمق وتكاملات مستقبلية بدون إعادة بناء
-            هيكل الموقع.
-          </p>
-        </div>
-
-        <div class="info-grid">
-          <article class="info-card">
-            <h3>تصميم مشترك</h3>
-            <p>
-              ملف أنماط واحد يحافظ على اتساق الهوية البصرية عبر الصفحة الرئيسية
-              وصفحات التطبيقات والصفحات القادمة.
-            </p>
-          </article>
-          <article class="info-card">
-            <h3>بيانات منظمة</h3>
-            <p>
-              يتم تخزين بيانات التطبيقات في JSON مما يسهل ربطها بواجهات API أو
-              تطبيقات الهاتف أو أي تدفقات عمل أكثر تطورًا لاحقًا.
-            </p>
-          </article>
-          <article class="info-card">
-            <h3>تنقل متناسق</h3>
-            <p>
-              شريط تنقل بسيط يجعل المشروع يبدو كمنصة متكاملة بدلًا من صفحة
-              هبوط واحدة.
-            </p>
-          </article>
+          <div class="hero-actions hero-actions-centered">
+            <a class="btn btn-primary" href="pages/apps.html">تصفح التطبيقات</a>
+            <a class="btn btn-secondary" href="pages/about.html">أصلح سيارتي</a>
+          </div>
         </div>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <p>مركز Innox EV. هيكل نظيف للمرحلة القادمة من النمو.</p>
-    </footer>
   </div>
-
-  <script src="../assets/js/apps.js" defer></script>
 </body>
 </html>
