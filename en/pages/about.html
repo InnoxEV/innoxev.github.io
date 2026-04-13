@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Innox EV Hub</title>
+  <meta
+    name="description"
+    content="Learn how Innox EV Hub is structured for scalability, cleaner maintenance, and future product expansion."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="brand" href="../index.html">Innox EV Hub</a>
+        <div class="nav-links">
+          <a class="nav-link" href="../index.html">Home</a>
+          <a class="nav-link" href="apps.html">Apps</a>
+          <a class="nav-link active" href="about.html">About</a>
+        </div>
+        <div class="language-switch" aria-label="Language switcher">
+          <a class="lang-link active" href="../../en/pages/about.html">EN</a>
+          <a class="lang-link" href="../../ar/pages/about.html">AR</a>
+        </div>
+      </nav>
+
+      <section class="page-hero">
+        <div class="page-hero-copy hero-copy">
+          <span class="eyebrow">Project foundation</span>
+          <h1 class="page-title">A cleaner structure for future growth</h1>
+          <p class="page-intro">
+            The site now separates presentation, content, and structured app
+            data so new pages and future integrations can scale with less
+            duplication.
+          </p>
+        </div>
+
+        <aside class="page-hero-card">
+          <p class="panel-label">What changed</p>
+          <ul class="feature-list">
+            <li>Shared CSS in one reusable location</li>
+            <li>Dedicated page directory for future expansion</li>
+            <li>JSON-based app catalog for structured content</li>
+          </ul>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section class="content-section">
+        <div class="section-heading">
+          <span class="eyebrow">Structure overview</span>
+          <h2>Ready for web and app integrations</h2>
+          <p>
+            The current setup keeps the homepage focused while allowing
+            specialized content pages and shared data sources to grow without
+            clutter.
+          </p>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card">
+            <h3><code>/assets/css</code></h3>
+            <p>
+              Stores the shared visual system so every HTML page can stay
+              consistent and easy to maintain.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3><code>/pages</code></h3>
+            <p>
+              Keeps secondary pages organized away from the homepage while
+              preserving a simple GitHub Pages entry point.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3><code>/data</code></h3>
+            <p>
+              Holds structured app content that can later feed mobile clients,
+              frontend filters, or API-backed workflows.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Innox EV Hub. Consistent structure across every page.</p>
+    </footer>
+  </div>
+</body>
+</html>

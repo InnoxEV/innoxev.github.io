@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Google Maps",
+    "description": "A reliable navigation setup tested for EV-friendly routing and daily use inside supported vehicle systems.",
+    "downloadLink": "#",
+    "downloadLabel": "Download",
+    "tag": "App"
+  },
+  {
+    "name": "Anghami",
+    "description": "A smooth in-car entertainment option that works well for music streaming during everyday drives and longer trips.",
+    "downloadLink": "#",
+    "downloadLabel": "Download",
+    "tag": "App"
+  },
+  {
+    "name": "PlugShare",
+    "description": "A helpful charging companion for locating stations, checking availability, and planning confident EV journeys.",
+    "downloadLink": "#",
+    "downloadLabel": "Download",
+    "tag": "App"
+  }
+]

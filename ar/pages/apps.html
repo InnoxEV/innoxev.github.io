@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>التطبيقات | مركز Innox EV</title>
+  <meta
+    name="description"
+    content="تصفح فهرس تطبيقات Innox EV واستكشف التنزيلات الموثوقة لتجربة سيارتك الكهربائية."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;500;700&family=Tajawal:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body class="arabic">
+  <div class="site-shell">
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="brand" href="../index.html">مركز Innox EV</a>
+        <div class="nav-links">
+          <a class="nav-link" href="../index.html">الرئيسية</a>
+          <a class="nav-link active" href="apps.html">التطبيقات</a>
+          <a class="nav-link" href="about.html">حول الموقع</a>
+        </div>
+        <div class="language-switch" aria-label="مبدل اللغة">
+          <a class="lang-link" href="../../en/pages/apps.html">EN</a>
+          <a class="lang-link active" href="../../ar/pages/apps.html">AR</a>
+        </div>
+      </nav>
+
+      <section class="page-hero">
+        <div class="page-hero-copy hero-copy">
+          <span class="eyebrow">مكتبة التطبيقات</span>
+          <h1 class="page-title">استكشف التشكيلة الحالية من التطبيقات</h1>
+          <p class="page-intro">
+            تستخدم هذه الصفحة ملف بيانات مشتركًا حتى يمكن إضافة أي تطبيق جديد
+            مرة واحدة ثم عرضه في أي مكان داخل الفهرس.
+          </p>
+          <div class="page-actions">
+            <a class="btn btn-primary" href="../../data/apps.ar.json">عرض بيانات JSON</a>
+            <a class="btn btn-secondary" href="about.html">هيكل المشروع</a>
+          </div>
+        </div>
+
+        <aside class="page-hero-card">
+          <p class="panel-label">طريقة تنظيم الفهرس</p>
+          <ul class="feature-list">
+            <li>هيكل JSON بسيط لبيانات التطبيقات</li>
+            <li>إعادة استخدام العرض في الصفحات المستقبلية</li>
+            <li>أساس قابل للتوسع لتكاملات أكثر تطورًا</li>
+          </ul>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section class="content-section">
+        <div class="section-heading">
+          <span class="eyebrow">التطبيقات المتاحة</span>
+          <h2>التنزيلات الحالية</h2>
+          <p>
+            يمكنك توسيع هذه القائمة في <code>data/apps.ar.json</code> كلما نما
+            النظام البيئي الخاص بك.
+          </p>
+        </div>
+
+        <div
+          class="card-grid"
+          data-apps-container
+          data-apps-src="../../data/apps.ar.json"
+          aria-live="polite"
+        ></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>مركز Innox EV. صفحات منظمة وجاهزة للإصدارات القادمة.</p>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/apps.js" defer></script>
+</body>
+</html>
