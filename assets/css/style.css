@@ -82,7 +82,7 @@ code {
 
 .welcome-logo-image {
   display: block;
-  height: 64px;
+  height: 48px;
   width: auto;
   object-fit: contain;
 }
@@ -568,7 +568,7 @@ html[dir="rtl"] .app-card-header {
   }
 
   .welcome-logo-image {
-    height: 54px;
+    height: 42px;
   }
 
   .lang-nav {
