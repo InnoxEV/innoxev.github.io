@@ -61,7 +61,7 @@ code {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  padding: 48px 0;
+  padding: 24px 0;
 }
 
 .welcome-panel {
@@ -69,6 +69,10 @@ code {
   padding: 56px;
   border-radius: 36px;
   background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 20px 48px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
@@ -78,6 +82,10 @@ code {
   justify-content: center;
   margin-bottom: 28px;
   text-decoration: none;
+}
+
+.welcome-panel .eyebrow {
+  justify-content: center;
 }
 
 .welcome-logo-image {
@@ -104,15 +112,18 @@ code {
   padding: 24px;
   border-radius: 28px;
   background: #ffffff;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
   color: var(--text);
+  cursor: pointer;
   text-decoration: none;
-  transition: transform 180ms ease, background-color 180ms ease;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .language-card:hover,
 .language-card:focus-visible {
-  transform: translateY(-2px);
+  transform: scale(1.03);
   background: var(--bg-soft);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.1);
 }
 
 .language-card-label {
@@ -199,6 +210,12 @@ h3 {
   min-height: calc(100vh - 120px);
   display: grid;
   align-items: center;
+  gap: 36px;
+  padding-bottom: 72px;
+}
+
+.home-main-stack {
+  align-items: start;
 }
 
 .hero,
@@ -387,6 +404,240 @@ main {
   margin-bottom: 26px;
 }
 
+.section-heading-centered {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.home-section {
+  padding: 12px 0;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 260px;
+  padding: 32px;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover,
+.feature-card:focus-within {
+  transform: scale(1.02);
+  box-shadow: 0 20px 44px rgba(15, 23, 42, 0.1);
+}
+
+.feature-card-muted {
+  opacity: 0.66;
+}
+
+.feature-card-muted:hover,
+.feature-card-muted:focus-within {
+  transform: none;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+}
+
+.feature-card p {
+  margin: 0;
+}
+
+.feature-card .btn {
+  margin-top: auto;
+  width: fit-content;
+}
+
+.feature-label {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(17, 24, 39, 0.06);
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.site-footer-home {
+  padding-top: 12px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.footer-links a {
+  color: var(--muted);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: var(--text);
+}
+
+.featured-apps {
+  padding: 0 0 24px;
+}
+
+.featured-app-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.featured-app-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+  min-height: 280px;
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.featured-app-copy h3 {
+  margin-top: 14px;
+}
+
+.featured-app-copy p {
+  margin: 0;
+  font-size: 1.02rem;
+}
+
+.featured-app-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(0, 113, 227, 0.08);
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.featured-app-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.app-detail-main {
+  min-height: calc(100vh - 140px);
+  display: grid;
+  place-items: center;
+  padding: 32px 0 72px;
+}
+
+.app-detail-main-wide {
+  place-items: start center;
+  gap: 28px;
+}
+
+.app-detail-hero {
+  width: min(100%, 760px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.app-detail-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.app-detail-card {
+  width: 100%;
+  padding: 40px;
+  border: 1px solid var(--line);
+  border-radius: 34px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+}
+
+.app-detail-text {
+  max-width: 34rem;
+}
+
+.app-detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.trust-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.trust-list p,
+.issue-block p {
+  margin: 0;
+}
+
+.video-placeholder {
+  min-height: 220px;
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  padding: 24px;
+  border-radius: 26px;
+  background: linear-gradient(180deg, #f7f8fa 0%, #eef2f7 100%);
+  text-align: center;
+}
+
+.video-placeholder-title {
+  color: var(--text);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.video-placeholder-meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.steps-list,
+.fix-list {
+  margin: 18px 0 0;
+  padding-left: 22px;
+  color: var(--muted);
+}
+
+.steps-list li + li,
+.fix-list li + li {
+  margin-top: 10px;
+}
+
+.issue-block h3 {
+  margin-bottom: 10px;
+}
+
 .card-grid,
 .info-grid {
   display: grid;
@@ -486,6 +737,17 @@ html[dir="rtl"] .page-hero {
   direction: rtl;
 }
 
+html[dir="rtl"] .featured-app-actions,
+html[dir="rtl"] .app-detail-actions {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .steps-list,
+html[dir="rtl"] .fix-list {
+  padding-right: 22px;
+  padding-left: 0;
+}
+
 html[dir="rtl"] .hero-copy-home {
   text-align: center;
 }
@@ -502,6 +764,9 @@ html[dir="rtl"] .app-card-header {
 @media (max-width: 900px) {
   .hero,
   .page-hero,
+  .featured-app-grid,
+  .app-detail-grid,
+  .feature-grid,
   .card-grid,
   .info-grid {
     grid-template-columns: 1fr;
@@ -515,6 +780,9 @@ html[dir="rtl"] .app-card-header {
   .hero-panel,
   .page-hero-copy,
   .page-hero-card,
+  .featured-app-card,
+  .app-detail-card,
+  .feature-card,
   .welcome-panel,
   .app-card,
   .info-card {
@@ -542,7 +810,9 @@ html[dir="rtl"] .app-card-header {
   }
 
   .hero-actions,
-  .page-actions {
+  .page-actions,
+  .featured-app-actions,
+  .app-detail-actions {
     flex-direction: column;
   }
 
