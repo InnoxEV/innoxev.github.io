@@ -975,6 +975,44 @@ html[dir="rtl"] .app-card-header {
   flex-direction: row-reverse;
 }
 
+.accessory-card {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  background: #f9f9fb;
+  border-radius: 24px;
+  padding: 32px;
+}
+
+.accessory-card-image img {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+.accessory-card-content {
+  max-width: 500px;
+}
+
+.accessory-tag {
+  font-size: 12px;
+  background: #eee;
+  padding: 6px 12px;
+  border-radius: 999px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .accessory-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .accessory-card-image img {
+    width: 140px;
+  }
+}
+
 @media (max-width: 900px) {
   .hero,
   .page-hero,
