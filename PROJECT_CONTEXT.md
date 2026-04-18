@@ -28,6 +28,9 @@ Phase 1 (MVP)
 - Arabic version follows the same structure with RTL adaptation
 - Do NOT create new files unless defined in specs
 - Maintain visual consistency between pages
+- Focus on problem-solving content (NOT pricing, comparisons, or generic car content)
+- Keep pages lightweight and fast (avoid heavy assets and unnecessary scripts)
+- Avoid broken links or incomplete features
 
 ## Structure
 - index.html → Welcome page (language selection)
