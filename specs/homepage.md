@@ -7,7 +7,7 @@
 ## Structure
 - /en/index.html → Homepage
 - /en/apps.html → Apps page
-- /en/pages/accessories.html → Accessories page
+- /en/accessories.html → Accessories page
 
 ---
 
