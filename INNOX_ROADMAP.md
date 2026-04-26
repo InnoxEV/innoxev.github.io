@@ -149,120 +149,186 @@ Instead of HTML-only:
 - Fetch from database:
 ```js
 GET /apps
+```
 
-3.4 Monetization Layer
+---
 
-Affiliate System
+## 3.4 Monetization Layer
 
-* Add links inside:
-    * Product pages
-    * App pages
+### Affiliate System
 
-Tracking
+- Add links inside:
+  - Product pages
+  - App pages
 
-* Track clicks in DB
+### Tracking
 
-⸻
+- Track clicks in database
 
-3.5 Hybrid Architecture (IMPORTANT)
+---
+
+## 3.5 Hybrid Architecture (IMPORTANT)
 
 DO NOT rebuild everything.
 
-Keep:
+### Keep:
 
-* Static pages (SEO)
+- Static pages (SEO)
 
-Add:
+### Add:
 
-* Dynamic components:
-    * Apps list
-    * Products list
+- Dynamic components:
+  - Apps list
+  - Products list
 
-⸻
+---
 
-4. Phase 4 — Platform & Services
+## 3.6 Frontend Integration
 
-Goal
+- Use fetch API to call Supabase REST endpoints
+- Example:
+  GET /rest/v1/apps
+
+- Render data into existing UI components
+
+Rule:
+Do NOT rebuild UI — inject data only
+
+---
+
+## 4. Phase 4 — Platform & Services
+
+### Goal
 
 Turn Innox into a real EV platform
 
-⸻
+---
 
-4.1 User System
+### 4.1 User System
 
-* Login (Supabase Auth)
-* Save tools / apps
-* Personalized experience
+- Login (Supabase Auth)
+- Save tools / apps
+- Personalized experience
 
-⸻
+---
 
-4.2 Admin Dashboard (VERY IMPORTANT)
+### 4.2 Admin Dashboard (VERY IMPORTANT)
 
 Instead of editing HTML:
 
-* Add new app from dashboard
-* Add product
-* Add guide
+- Add new app from dashboard
+- Add product
+- Add guide
 
-⸻
+---
 
-4.3 EV Support System
+### 4.3 EV Support System
 
-* User submits issue
-* System suggests:
-    * Apps
-    * Guides
-    * Accessories
+- User submits issue
+- System suggests:
+  - Apps
+  - Guides
+  - Accessories
 
-⸻
+---
 
-4.4 Direct Selling (Optional)
+### 4.4 Direct Selling (Optional)
 
-* Product listings
-* Checkout (Stripe later)
+- Product listings
+- Checkout (Stripe later)
 
-⸻
+---
 
-5. Migration Strategy (CRITICAL)
+## 5. Migration Strategy (CRITICAL)
 
-Step 1
+### Step 1
 
 Keep all current static pages
 
-Step 2
+### Step 2
 
 Introduce Supabase in parallel
 
-Step 3
+### Step 3
 
-Replace:
+Convert Apps page:
 
-* Apps page → dynamic
-* Accessories → dynamic
+- Replace static cards with dynamic fetch
+- Keep same UI design
+- Add fallback if API fails
 
-Step 4
+### Step 4
+
+Convert Accessories page (same approach)
+
+### Step 5
 
 Add admin panel
 
-⸻
+---
 
-6. Final Architecture Vision
+## 6. System Architecture (Final Vision)
 
 User → Frontend → API (Supabase) → Database
 
-Hybrid:
+### Hybrid:
 
-* Static SEO pages
-* Dynamic data-driven components
+- Static SEO pages
+- Dynamic data-driven components
 
-⸻
+---
 
-7. Key Principle
+## 7. Key Principle
 
 DO NOT:
 
-* Overbuild early
+- Overbuild early
 
 DO:
 
-* Evolve step by step
+- Evolve step by step
+
+---
+
+## 8. Phase 2 Execution Targets
+
+- Publish 10–20 issue pages
+- Publish 5–10 guides
+- Each page must link to:
+  - 1 app
+  - 1 accessory
+
+Goal:
+Build initial SEO traffic foundation
+
+---
+
+## 9. Priority Order
+
+1. Apps ecosystem (MicroG + Maps)
+2. Issues & Fixes pages
+3. Guides
+4. Accessories expansion
+
+---
+
+## 10. Success Metrics
+
+### Phase 2:
+- 100+ monthly users
+- 5+ indexed pages on Google
+
+### Phase 3:
+- First affiliate click tracked
+- First conversion
+
+### Phase 4:
+- Active user interaction
+
+---
+
+## 11. Roadmap Principle
+
+- Focus on outcomes, not features
+- Each phase must deliver measurable value
+- Do not start next phase before validating current phase
